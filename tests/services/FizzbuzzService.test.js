@@ -7,7 +7,7 @@ describe('test for fizzbuzz service',() =>{
         const explorer1 = {name: "Explorer1", score: 1}
         const explorer3 = {name: "Explorer3", score: 3}
         const explorer5 = {name: "Explorer5", score: 5}
-        const explorer15 = {name: "Explorer15", score: 154}
+        const explorer15 = {name: "Explorer15", score: 15}
 
         expect(FizzbuzzService.applyValidationInExplorer(explorer1)).toStrictEqual({name: "Explorer1", score: 1, trick: 1})
 
