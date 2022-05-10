@@ -20,4 +20,21 @@ describe('test for fizzbuzz service',() =>{
 
     })
 
+
+    test('testting applyValidationInNumber',()=>{
+
+        expect(FizzbuzzService.applyValidationInNumber(1)).toEqual({"score": 1, "trick" : 1 });
+        expect(FizzbuzzService.applyValidationInNumber(3)).toEqual({"score": 3, "trick" : "Fizz" })
+        expect(FizzbuzzService.applyValidationInNumber(5)).toEqual({"score": 5, "trick" : "Buzz" })
+        expect(FizzbuzzService.applyValidationInNumber(15)).toEqual({"score": 15, "trick" : "FizzBuzz" })
+
+
+    })
+
+
+
+
 })
+
+
+//applyValidationInNumber(number)
