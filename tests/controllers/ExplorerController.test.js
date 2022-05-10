@@ -1,4 +1,5 @@
 const ExplorerController = require("../../lib/controllers/ExplorerController");
+//const FizzbuzzService = require("../../lib/services/FizzbuzzService");
 
 
 
@@ -107,6 +108,16 @@ describe("Test para ExplorerController", () => {
       }
     ]);
 });
+
+//---------------FizzBuzz validation------------------//
+
+  test("validacion FIzzBuzz",()=>{
+
+    expect(ExplorerController.applyValidationInNumber(1)).toEqual({"score": 1, "trick" : 1 });
+        expect(ExplorerController.applyValidationInNumber(3)).toEqual({"score": 3, "trick" : "Fizz" })
+        expect(ExplorerController.applyValidationInNumber(5)).toEqual({"score": 5, "trick" : "Buzz" })
+        expect(ExplorerController.applyValidationInNumber(15)).toEqual({"score": 15, "trick" : "FizzBuzz" })
+  })
 });
 
 
