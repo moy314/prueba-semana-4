@@ -14,7 +14,7 @@ const explorers = Reader.readJsonFile("explorers.json");
 //const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 const ExplorerService = require('./lib/services/ExplorerService');
 const explorersInNode =  ExplorerService.filterByMission(explorers, "node");
-//console.log(explorersInNode.length)
+console.log(explorersInNode)
 console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node"));
 // Part4: Get the explorer's usernames in Node
 
